@@ -1,16 +1,24 @@
-<font size=6>Listagem de Clientes</font>
-<% id = [1, 2, 3, 4] %>
-<% nome = ["Peter parker", "Mike Wazowsk", "Sullivan", "Milles Moralles"] %>
-<% idade = [20, 10, 12, 18] %>
-<% email = ["petergwen@hotmail.com", "mikezinho@gmail.com", "sumonstrao@outlook.com", "milles@yahoo.com.br"] %>
-<p></p>
-<table class="table">
-    <thead>
+<% id    = [1, 2, 3, 4] %>
+<% nome  = ["Peter parker", "Mike Wazowsk", "Sullivan", "Milles Moralles"] %>
+<% idade = [20, 10, 12, 18]  %>
+<% email = ["petergwen@hotmail.com", "mikezinho@gmail.com", "sumonstrao@outlook.com", 
+              "milles@yahoo.com.br"] %>
+<div class="navigationBar">
+  <a href="index">Sistema de cadastro de clientes</a>
+  <a href="index">Inicio</a>
+  <a href="index">Sobre</a>
+  <a href="show">Lista de Clientes</a>
+</div>
+<div class="header">
+    <font size="6">Listagem de Clientes</font>
+</div>
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
         <tr>
-            <th scope="col">Id  |</th>
-            <th scope="col">Nome  |</th>
-            <th scope="col">Idade  |</th>
-            <th scope="col">Email  |</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Email</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +28,13 @@
                 <td><%= nome[c - 1] %></td>
                 <td><%= idade[c - 1] %></td>
                 <td><%= email[c - 1] %></td>
+                <td>
+                    <a href="index" style="text-decoration:none">Editar |</a>
+                    <a href="index" style="text-decoration:none">Detalhes |</a>
+                    <a href="index" style="text-decoration:none">Deletar</a>
+                </td>
             </tr>
         <% end %>
     </tbody>
 </table>
+<a href="index" style="text-decoration:none">Adicionar novo cliente</a>
