@@ -1,0 +1,26 @@
+<font size=6>Listagem de Clientes</font>
+<% id = [1, 2, 3, 4] %>
+<% nome = ["Peter parker", "Mike Wazowsk", "Sullivan", "Milles Moralles"] %>
+<% idade = [20, 10, 12, 18] %>
+<% email = ["petergwen@hotmail.com", "mikezinho@gmail.com", "sumonstrao@outlook.com", "milles@yahoo.com.br"] %>
+<p></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id  |</th>
+            <th scope="col">Nome  |</th>
+            <th scope="col">Idade  |</th>
+            <th scope="col">Email  |</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= id.each do |c| %>
+            <tr>
+                <th scope="row"><%= id[c - 1] %></th>
+                <td><%= nome[c - 1] %></td>
+                <td><%= idade[c - 1] %></td>
+                <td><%= email[c - 1] %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
