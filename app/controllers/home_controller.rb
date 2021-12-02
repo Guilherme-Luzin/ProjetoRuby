@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @welcome = "Cadastro de Cliente"
+    @welcome = "Sistema de cadastro de Cliente"
   end
 end
