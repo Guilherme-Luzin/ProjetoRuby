@@ -1,0 +1,37 @@
+<div class="navigationBar">
+  <a href="index">Sistema de cadastro de clientes</a>
+  <a href="index">Inicio</a>
+  <a href="show">Lista de Clientes</a>
+</div>
+<div class="header">
+    <font size="6">Detalhes do Cliente</font>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th><font size="6">Detalhes</font></th>
+        </tr>
+    </thead>
+    <hr>
+    <tbody>
+        <tr>
+            <th>Id:</th>
+            <td><%= @detalhes[:id] %></td>
+        </tr>
+        <tr>
+            <th>Nome:</th>
+            <td><%= @detalhes[:nome] %></td>
+        </tr>
+        <tr>
+            <th>Idade:</th>
+            <td><%= @detalhes[:idade] %></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td><%= @detalhes[:email] %></td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<a href="show" class="link">Editar</a> |
+<a href="show" class="link">Voltar para a lista</a>
